@@ -18,6 +18,7 @@ import tempfile
 from fpdf import FPDF
 
 load_dotenv()
+replicate_api_key = os.getenv("REPLICATE_API_KEY")
 
 def initialize_session_state():
     if 'history' not in st.session_state:
